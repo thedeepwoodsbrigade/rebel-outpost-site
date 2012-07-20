@@ -8,6 +8,9 @@ RoSite::Application.routes.draw do
 
   match '/process'  => 'pages#process', as: :process
   match '/about'	=> 'pages#about',	as: :about
-  match '/contact'	=> 'messages#new',	as: :contact
+  #match '/contact'	=> 'messages#new',	as: :contact
+
+  match '/contact' => 'messages#new', 		as: :contact, via: :get
+	match '/contact' => 'messages#create', 	as: :contact, via: :post
 
 end

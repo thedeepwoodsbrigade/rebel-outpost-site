@@ -70,7 +70,7 @@ module RoSite
       :port                 => 587,
       :domain               => "rebel-outpost.com",
       :user_name            => "lead@rebel-outpost.com",
-      :password             => "Super-Secure-Password",
+      :password             => "rebel-outpost",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
