@@ -1,6 +1,6 @@
 class NotificationsMailer < ActionMailer::Base
   default from: "lead@rebel-outpost.com"
-  default :to => "lets-talk@rebel-outpost.dev"
+  default :to => "lets-talk@rebel-outpost.com"
 
   def new_message(message)
     @message = message
