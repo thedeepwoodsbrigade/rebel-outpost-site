@@ -1,0 +1,33 @@
+!!! 5
+%html
+  %head
+    %title Rebel Outpost
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body   
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container.topbar
+          %ul.nav.pull-left
+            %li
+              = link_to 'Rebel Outpost', root_path, class: 'brand'
+          %ul.nav.pull-right
+            %li
+              = link_to 'Process', :process
+            %li
+              = link_to 'About', :about
+            %li
+              = link_to 'Contact'
+
+  %section
+    .container
+      .span12.mainbody
+        = yield
+
+  / %footer.center
+  /   .span12
+  /     Rebel Outpost 2012
+
+
+
