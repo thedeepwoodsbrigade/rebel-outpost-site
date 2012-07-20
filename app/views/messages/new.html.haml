@@ -1,0 +1,37 @@
+
+.form-horizontal.well
+  .fieldset
+    .legend
+      %h2 Contact Us
+      %br
+      = form_for @message do |f|
+        .field
+          = f.label :first_name
+          = f.text_field :first_name, class: 'span4'
+        %br
+        .field
+          = f.label :last_name
+          = f.text_field :last_name, class: 'span4'
+        %br
+        .field
+          = f.label :email
+          = f.text_field :email, class: 'span4'
+        %br
+        .field
+          = f.label :phone
+          = f.text_field :phone, class: 'span4'
+        %br
+        .field
+          = f.label :company
+          = f.text_field :company, class: 'span4'
+        %br
+        .field
+          = f.label 'Interested In?'
+          = f.select :service_wanted, options_for_select(["New Application", "Legacy Application", "Code Review", "Other"]), class: 'span4'
+        %br
+        .field
+          = f.label 'Comments'
+          = f.text_area :content, class: 'span6', rows:"10"
+        %br
+        .field
+          = f.submit 'Contact us!', class: 'btn btn-primary btn-large'
