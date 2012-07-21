@@ -70,13 +70,13 @@ module RoSite
       :port                 => 587,
       :domain               => "rebel-outpost.com",
       :user_name            => "lead",
-      :password             => "rebel-outpost",
+      :password             => "rebeloutpost",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
 
     config.action_mailer.default_url_options = {
-      :host => "rebel-outpost.herokuapp.com"
+      :host => "rebel-outpost.com"
     }
   end
 end

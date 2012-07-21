@@ -4,6 +4,6 @@ class NotificationsMailer < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail(:subject => "rebel-outpost.com lead")
+    mail(:subject => "Rebel Outpost lead")
   end
 end
